@@ -109,6 +109,9 @@ async def handle_join_request(update: ChatJoinRequest):
 
 @router.message(F.video)
 async def video_to_gif(message: Message, state: FSMContext):
+    if not await sub_chek(message.from_user.id):
+        await message.answer(f"Send request first, Киньте запрос на подписку: \n{CHANNEL_LINK}", reply_markup=kb.subscribe_channel)
+        return
     await state.update_data(
         video_id=message.video.file_id,
         user_id=message.from_user.id,
@@ -234,7 +237,7 @@ async def start(message: Message):
     await rq.set_user(tg_id=user_id)
 
     if not await sub_chek(message.from_user.id):
-        await message.answer(f"Subscribe first, Подпишитесь: \n{CHANNEL_LINK}", reply_markup=kb.subscribe_channel)
+        await message.answer(f"Send request first, Киньте запрос на подписку: \n{CHANNEL_LINK}", reply_markup=kb.subscribe_channel)
         return
     await message.answer("Welcome serfer🏄‍♂️! \nSend mp4 video and i will cook it to gif😎\ncurrently bot supports only mp4 if you have any better ideas feel free to write to my dm(check bot description for further info)🥂")
 
