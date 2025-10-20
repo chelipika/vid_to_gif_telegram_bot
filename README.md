@@ -52,8 +52,9 @@ This bot includes features for both users and administrators, including a mandat
 
 *(Here you can add a short GIF showing the bot in action. It's highly recommended for user engagement!)*
 
-![Bot Demo GIF](https://github.com/chelipika/vid_to_gif_telegram_bot/blob/main/assets/demo.gif)
-
+<p align="center">
+  <img src="https://github.com/chelipika/vid_to_gif_telegram_bot/blob/main/assets/demo.gif" alt="Demo GIF" width="200">
+</p>
 ---
 
 ## 🔧 Installation (For Developers)
