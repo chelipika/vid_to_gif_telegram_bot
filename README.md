@@ -1,9 +1,3 @@
-I'll answer as a world-famous Lead Software Engineer and Open Source Contributor, awarded the GitHub Star for outstanding contributions to the developer community.
-
-Here is a professional, well-structured README file for your Telegram bot project. This file is designed to be clear for both users who want to use the bot and developers who might want to set it up themselves.
-
-***
-
 # 🤖 Telegram Video to GIF Bot
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python)](https://www.python.org/)
@@ -58,7 +52,7 @@ This bot includes features for both users and administrators, including a mandat
 
 *(Here you can add a short GIF showing the bot in action. It's highly recommended for user engagement!)*
 
-![Bot Demo GIF](httpsp://your-link-to-a-demo.gif)
+![Bot Demo GIF](https://github.com/chelipika/vid_to_gif_telegram_bot/blob/main/assets/demo.gif)
 
 ---
 
@@ -79,8 +73,8 @@ Follow these instructions to get a local copy up and running for development and
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/chelipika/vid_to_gif_telegram_bot.git
+    cd vid_to_gif_telegram_bot
     ```
 
 2.  **Create and activate a virtual environment:**
@@ -95,12 +89,6 @@ Follow these instructions to get a local copy up and running for development and
     ```
 
 3.  **Install the required dependencies:**
-    Create a `requirements.txt` file with the following content:
-    ```txt
-    aiogram==3.1.1
-    moviepy==1.0.3
-    ```
-    Then, install them:
     ```sh
     pip install -r requirements.txt
     ```
